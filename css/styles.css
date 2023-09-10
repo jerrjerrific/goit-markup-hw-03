@@ -1,5 +1,4 @@
 /* GENERAL OR GLOBAL SELECTORS */
-
 body {
   color: #434455;
   font-family: Roboto, sans-serif;
@@ -9,13 +8,24 @@ body {
   line-height: 24px; /* 150% */
   letter-spacing: 0.02em;
   width: 1440px;
-  margin: 0;
+  margin: 0px;
 }
 
 ul {
   list-style: none;
   padding: 0px;
   margin: 0px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 111.111% */
+  letter-spacing: 0.02em;
+  margin: 0px;
+  text-transform: capitalize;
 }
 
 h3 {
@@ -26,12 +36,15 @@ h3 {
   letter-spacing: 0.4px;
 }
 
+p {
+  margin: 0px;
+}
+
 button {
   cursor: pointer;
 }
 
 /* WEBSITE HEADER SECTION */
-
 header {
   width: 1440px;
   height: 72px;
@@ -100,9 +113,43 @@ header nav a:focus {
   color: #434455;
 }
 
+/* WEBSITE FOOTER SECTION */
+footer {
+  background: var(--NAVY-BLUE, #2e2f42);
+  color: var(--CLOUD, #f4f4fd);
+  height: 312px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--CLOUD, #f4f4fd);
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+
+footer p {
+  padding-left: 156px;
+}
+
+.footer-span {
+  color: #4d5ae5;
+}
+
+.footer-sitename {
+  padding-top: 101.5px;
+}
+
+.footer-text {
+  padding-top: 17.5px;
+  width: 264px;
+}
+
 /* INDEX - BODY SECTION */
 /* SPLASH HEADER */
-
 .splash-header {
   text-align: center;
   color: white;
@@ -131,18 +178,6 @@ header nav a:focus {
   color: var(--WHITE, #fff);
 }
 
-.portfolio-filter button {
-  border-radius: 4px;
-  border: 1px solid var(--CORNFLOWER, #e7e9fc);
-  background: var(--CLOUD, #f4f4fd);
-  display: flex;
-  padding: 12px 24px;
-  justify-content: center;
-  align-items: center;
-  color: var(--IRIS, #4d5ae5);
-  text-align: center;
-}
-
 .splash-header button,
 .portfolio-filter button {
   font-size: 16px;
@@ -160,15 +195,8 @@ header nav a:focus {
   color: var(--WHITE, #fff);
 }
 
-.wawd-images h2 {
-  text-align: center;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 40px; /* 111.111% */
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-}
+/* INDEX - BODY SECTION */
+/* WHAT ARE WE DOING */
 
 .wawd-images img {
   width: 360px;
@@ -178,34 +206,6 @@ header nav a:focus {
 .our-team h2 {
   color: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
-
-  /* Header 2 */
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 40px; /* 111.111% */
-  letter-spacing: 0.72px;
-  text-transform: capitalize;
-}
-
-footer {
-  background: var(--NAVY-BLUE, #2e2f42);
-  color: var(--CLOUD, #f4f4fd);
-}
-
-footer a {
-  text-decoration: none;
-  color: var(--CLOUD, #f4f4fd);
-  font-family: Raleway;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 21px;
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
-}
-
-.footer-span {
-  color: #4d5ae5;
 }
 
 .portfolio-images img {
@@ -213,8 +213,6 @@ footer a {
   height: 300px;
   flex-shrink: 0;
 }
-
-/* New Code entries - to transfer to similar selectors after completely working */
 
 /* first update end. first commit nad push starts */
 .what-are-we-doing {
@@ -264,10 +262,6 @@ footer a {
   text-align: center;
 }
 
-.our-team h2 {
-  margin: 0px;
-}
-
 .our-team h3 {
   margin: 0px;
   padding-top: 32px;
@@ -293,25 +287,18 @@ footer a {
   padding-top: 8px;
 }
 
-footer p {
-  padding-left: 156px;
+/*SITE PORTFOLIO PAGE */
+
+.portfolio-filter button {
+  border-radius: 4px;
+  border: 1px solid var(--CORNFLOWER, #e7e9fc);
+  background: var(--CLOUD, #f4f4fd);
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  color: var(--IRIS, #4d5ae5);
+  text-align: center;
 }
 
-.footer-sitename {
-  padding-top: 101.5px;
-}
-
-.footer-text {
-  padding-top: 17.5px;
-  width: 264px;
-}
-
-p {
-  margin: 0px;
-}
-
-footer {
-  height: 312px;
-}
-
-/* Portfolio section - rework */
+/* Portfolio section - adjustments */
