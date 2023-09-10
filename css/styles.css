@@ -56,15 +56,6 @@ header nav a:focus {
   color: #434455;
 }
 
-.splash-header {
-  text-align: center;
-  font-size: 50px;
-  text-transform: uppercase;
-  color: white;
-  background: var(--NAVY-BLUE, #2e2f42);
-  line-height: 75px;
-}
-
 button {
   cursor: pointer;
 }
@@ -163,3 +154,46 @@ footer a {
   height: 300px;
   flex-shrink: 0;
 }
+
+/* New Code entries - to transfer to similar selectors after completely working */
+body {
+  width: 1440px;
+}
+
+header {
+  width: 1440px;
+  height: 72px;
+  border-bottom: 1px solid #e7e9fc;
+  display: inline-flex;
+}
+
+header p {
+  justify-content: flex-start;
+  margin-left: 156px;
+}
+
+.header-nav,
+.header-contact {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.splash-header {
+  text-align: center;
+  color: white;
+  background: var(--NAVY-BLUE, #2e2f42);
+  height: 600px;
+  margin: 0;
+}
+
+.splash-header h1 {
+  margin: 0;
+  font-size: 56px;
+  padding: 188px 472px 48px 472px;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+  font-weight: 700px;
+}
+
+/* first update end. first commit nad push starts */
