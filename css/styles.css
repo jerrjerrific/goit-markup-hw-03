@@ -6,6 +6,8 @@ body {
   font-weight: 400;
   line-height: 24px; /* 150% */
   letter-spacing: 0.02em;
+  width: 1440px;
+  margin: 0;
 }
 
 ul {
@@ -22,6 +24,15 @@ h3 {
   letter-spacing: 0.4px;
 }
 
+/* WEBSITE HEADER SECTION */
+
+header {
+  width: 1440px;
+  height: 72px;
+  border-bottom: 1px solid #e7e9fc;
+  display: inline-flex;
+}
+
 header a {
   text-decoration: none;
   color: #434455;
@@ -30,7 +41,6 @@ header a {
 header p {
   font-family: Raleway, sans-serif;
   font-size: 18px;
-  font-style: bold;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.54px;
@@ -38,8 +48,12 @@ header p {
   color: #2e2f42;
 }
 
-header a:hover,
-header a:focus {
+header li {
+  padding-right: 40px;
+}
+
+header ul:hover,
+header ul:focus {
   color: var(--OCEAN, #404bbf);
 }
 
@@ -48,8 +62,32 @@ header nav a:focus {
   border-bottom: 3px solid #404bbf;
 }
 
+.header-sitename {
+  padding-top: 25.5px;
+  padding-left: 156px;
+  justify-content: flex-start;
+  width: 115px;
+  align-items: center;
+}
+
+.header-nav {
+  padding-top: 25.5px;
+  padding-left: 76px;
+}
+
 .header-span {
   color: #4d5ae5;
+}
+
+.header-contact {
+  padding-left: 292px;
+}
+
+.header-nav,
+.header-contact {
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
 
 .header-contact a {
@@ -137,7 +175,6 @@ footer a {
   color: var(--CLOUD, #f4f4fd);
   font-family: Raleway;
   font-size: 18px;
-  font-style: bold;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.54px;
@@ -155,31 +192,6 @@ footer a {
 }
 
 /* New Code entries - to transfer to similar selectors after completely working */
-body {
-  width: 1440px;
-  margin: 0;
-}
-
-header {
-  width: 1440px;
-  height: 72px;
-  border-bottom: 1px solid #e7e9fc;
-  display: inline-flex;
-}
-
-header p {
-  justify-content: flex-start;
-  margin-left: 156px;
-  width: 264px;
-}
-
-.header-nav,
-.header-contact {
-  display: flex;
-  align-items: center;
-  margin: 0;
-}
-
 .splash-header {
   text-align: center;
   color: white;
@@ -194,12 +206,12 @@ header p {
   padding: 188px 472px 48px 472px;
   line-height: 60px;
   letter-spacing: 0.02em;
-  font-weight: 700px;
+  font-weight: 700;
 }
 
 /* first update end. first commit nad push starts */
 .what-are-we-doing {
-  margin-top: 120px;
+  padding-top: 120px;
   margin-left: 156px;
   margin-bottom: 120px;
   padding: 0;
@@ -207,6 +219,7 @@ header p {
 
 .wawd-corevalues h3 {
   margin: 0px 24px 8px 0px;
+  padding-top: 120px;
 }
 
 .wawd-corevalues ul {
@@ -217,7 +230,6 @@ header p {
 .wawd-corevalues p {
   justify-content: center;
   align-items: flex-start;
-  text-wrap: wrap;
   width: 264px;
   margin: 0px 24px 0px 0px;
 }
@@ -237,13 +249,59 @@ header p {
   width: 1440px;
   height: 732px;
   background-color: #f4f4fd;
+  padding-top: 120px;
+  margin: 0px;
+  text-align: center;
+}
+
+.our-team h2 {
+  margin: 0px;
+}
+
+.our-team h3 {
+  margin: 0px;
+  padding-top: 32px;
 }
 
 .our-team ul {
   display: flex;
   justify-content: center;
+  padding-top: 72px;
+  margin: 0px;
 }
 
 .our-team li {
   background-color: #ffffff;
+  margin-right: 24px;
+  padding-bottom: 32px;
+  box-shadow: 0px 2px 1px 0px #2e2f4214;
+  box-shadow: 0px 1px 1px 0px #2e2f4229;
+  box-shadow: 0px 1px 6px 0px #2e2f4214;
 }
+
+.our-team p {
+  padding-top: 8px;
+}
+
+footer p {
+  padding-left: 156px;
+}
+
+.footer-sitename {
+  padding-top: 101.5px;
+}
+
+.footer-text {
+  padding-top: 17.5px;
+  width: 264px;
+}
+
+p {
+  margin: 0px;
+}
+
+footer {
+  height: 312px;
+}
+
+/* Portfolio section - rework */
