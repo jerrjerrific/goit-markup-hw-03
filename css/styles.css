@@ -224,7 +224,6 @@ footer p {
   margin: 120px 0px 72px 0px;
   padding-left: 403px;
   width: 323px;
-  text-wrap: nowrap;
 }
 
 .wawd-images li {
@@ -302,11 +301,24 @@ footer p {
   margin-right: 24px;
 }
 
+/*SITE PORTFOLIO PAGE */
 /* CARDS/IMAGES */
 .portfolio-images {
   width: 1440px;
   display: flex;
   padding-left: 156px;
+}
+
+.portfolio-images h3 {
+  margin: 0px;
+  padding-top: 32px;
+  padding-left: 16px;
+}
+
+.portfolio-images img {
+  width: 360px;
+  height: 300px;
+  flex-shrink: 0;
 }
 
 .portfolio-images ul {
@@ -317,20 +329,22 @@ footer p {
 .portfolio-images li {
   background-color: #ffffff;
   margin-right: 24px;
-  padding-bottom: 32px;
   border: 1px solid #e7e9fc;
   width: 360px;
   height: 420px;
 }
 
-.portfolio-images h3 {
-  margin: 0px;
-  padding-top: 32px;
+.portfolio-images li:nth-of-type(3n + 1) {
+  margin-bottom: 48px;
 }
 
-.portfolio-images img {
-  width: 360px;
-  height: 300px;
-  flex-shrink: 0;
+.portfolio-images li:last-child {
+  margin-bottom: 120px;
 }
-/* Portfolio section - adjustments */
+
+.portfolio-images p {
+  margin: 0px;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-bottom: 32px;
+}
