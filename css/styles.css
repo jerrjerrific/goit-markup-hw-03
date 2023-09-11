@@ -224,6 +224,7 @@ footer p {
   margin: 120px 0px 72px 0px;
   padding-left: 403px;
   width: 323px;
+  text-wrap: nowrap;
 }
 
 .wawd-images li {
